@@ -21,4 +21,12 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::group(['middlware'=>[]], function() {
+
+    Route::group(['prefix'=>'membership', 'permission'=>'', 'middleware'=>[]], function() {
+
+        Route::get('/application',  ['permission' => '', 'uses'=>'\App\Http\Controllers\MembershipController@create'])->name('membership.application');
+    });
+});
+
 require __DIR__.'/auth.php';
