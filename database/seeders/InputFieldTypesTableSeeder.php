@@ -16,40 +16,54 @@ class InputFieldTypesTableSeeder extends Seeder
         foreach([
             [
                 'code' => 'text', // 1
-                'type' => 'text'
+                'type' => 'text',
+                'value_column' => 'string'
             ],
             [
                 'code' => 'textarea', // 2
-                'type' => 'textarea'
+                'type' => 'textarea',
+                'value_column' => 'text'
             ],
             [
                 'code' => 'number', // 3
-                'type' => 'number'
+                'type' => 'number',
+                'value_column' => 'int'
             ],
             [
                 'code' => 'date', // 4
-                'type' => 'date'
+                'type' => 'date',
+                'value_column' => 'date'
             ],
             [
                 'code' => 'datetime', // 5
-                'type' => 'datetime'
+                'type' => 'datetime',
+                'value_column' => 'datetime'
             ],
             [
                 'code' => 'select', // 6
-                'type' => 'select'
+                'type' => 'select',
+                'value_column' => 'fk_int' // select input field must have look_up_model
             ]
             ,
             [
                 'code' => 'email', // 7
-                'type' => 'email'
+                'type' => 'email',
+                'value_column' => 'string'
             ],
             [
                 'code' => 'radio', // 8
-                'type'  => 'radio'
+                'type'  => 'radio',
+                'value_column' => 'string'
             ],
             [
                 'code' => 'checkbox', // 9
-                'type'  => 'checkbox'
+                'type'  => 'checkbox',
+                'value_column' => 'string'
+            ],
+            [
+                'code' => 'decimal', // 10
+                'type' => 'decimal',
+                'value_column' => 'decimal'
             ]
         ] as $input_field_type)
         {

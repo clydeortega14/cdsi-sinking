@@ -17,7 +17,13 @@ class CreateApplicationFormValuesTable extends Migration
             $table->id();
             $table->foreignId('application_form_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('input_field_type_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
-            $table->text('value');
+            $table->string('string');
+            $table->text('text');
+            $table->integer('int');
+            $table->date('date');
+            $table->datetime('datetime');
+            $table->integer('fk_int');
+            $table->decimal('decimal', 9, 2);
             $table->timestamps();
         });
     }

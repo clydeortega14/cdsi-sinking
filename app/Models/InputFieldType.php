@@ -13,6 +13,7 @@ class InputFieldType extends Model
 
     protected $fillable = [
         'code',
-        'type'
+        'type',
+        'value_column'
     ];
 }

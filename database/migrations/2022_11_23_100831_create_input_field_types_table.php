@@ -17,6 +17,7 @@ class CreateInputFieldTypesTable extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('type');
+            $table->string('value_column');
             $table->timestamps();
         });
     }
