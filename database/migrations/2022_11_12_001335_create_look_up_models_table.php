@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInputFieldTypesTable extends Migration
+class CreateLookUpModelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateInputFieldTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('input_field_types', function (Blueprint $table) {
+        Schema::create('look_up_models', function (Blueprint $table) {
             $table->id();
-            $table->string('code')->unique();
-            $table->string('type');
-            $table->string('value_column');
-            $table->foreignId('look_up_model_id')->nullable()->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->string('model'); // App\Models\ModelName
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateInputFieldTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('input_field_types');
+        Schema::dropIfExists('look_up_models');
     }
 }

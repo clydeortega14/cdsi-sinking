@@ -14,6 +14,12 @@ class ApplicationFormValue extends Model
     protected $fillable = [
         'application_form_id',
         'input_field_type_id',
-        'value'
+        'string',
+        'text',
+        'int',
+        'date',
+        'datetime',
+        'look_up_model_id',
+        'decimal'
     ];
 }

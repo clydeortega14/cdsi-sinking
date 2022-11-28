@@ -44,6 +44,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CivilStatusTableSeeder::class);
         $this->call(GendersTableSeeder::class);
         $this->call(LoanTypesTableSeeder::class);
+        $this->call(LookUpModelsTableSeeder::class);
 
         (\App\Models\User::find(1))->assignRole(\Spatie\Permission\Models\Role::where('name', 'super.admin')->first());
     }

@@ -5,16 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class InputFieldType extends Model
+class LookUpModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'input_field_types';
+    protected $table = 'look_up_models';
 
     protected $fillable = [
-        'code',
-        'type',
-        'value_column',
-        'look_up_model_id'
+        'model'
     ];
 }

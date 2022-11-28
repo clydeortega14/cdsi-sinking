@@ -22,7 +22,7 @@ class CreateApplicationFormValuesTable extends Migration
             $table->integer('int');
             $table->date('date');
             $table->datetime('datetime');
-            $table->integer('fk_int');
+            $table->foreignId('look_up_model_id')->nullable()->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->decimal('decimal', 9, 2);
             $table->timestamps();
         });

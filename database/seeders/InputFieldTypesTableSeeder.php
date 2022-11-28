@@ -42,7 +42,7 @@ class InputFieldTypesTableSeeder extends Seeder
             [
                 'code' => 'select', // 6
                 'type' => 'select',
-                'value_column' => 'fk_int' // select input field must have look_up_model
+                'value_column' => 'look_up_model_id' // select input field must have look_up_model
             ]
             ,
             [
