@@ -1,0 +1,13 @@
+{
+    "name": "ShareCapital",
+    "alias": "sharecapital",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ShareCapital\\Providers\\ShareCapitalServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

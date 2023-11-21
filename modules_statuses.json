@@ -1,0 +1,7 @@
+{
+    "FrontOffice": true,
+    "MembershipProfile": true,
+    "UserAccess": true,
+    "LoanApplication": true,
+    "ShareCapital": true
+}

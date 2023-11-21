@@ -1,0 +1,13 @@
+{
+    "name": "FrontOffice",
+    "alias": "frontoffice",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FrontOffice\\Providers\\FrontOfficeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

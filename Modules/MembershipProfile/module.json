@@ -1,0 +1,13 @@
+{
+    "name": "MembershipProfile",
+    "alias": "membershipprofile",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MembershipProfile\\Providers\\MembershipProfileServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
